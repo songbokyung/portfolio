@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song bokyung portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="favicon" href="favicon.ico">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script> <!-- 부드러운 애니 효과 -->
+    <script type="text/javascript" src="js/script_skill2.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/DB_springMove_fn.js"></script><!-- 이미지 -->
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div id="contents">
+            <div id="home" class="mn">
+                <p><a href="#skills"><img src="./img/scroll.png" alt="scroll"></a></p>
+                <header>
+                    <!-- 메뉴 버튼 -->
+                    <div id="header">
+                        <div id="menu_btn">
+                            <div id="menu_open">
+                                <div class="menu_btn_line1"></div>
+                                <div class="menu_btn_line2"></div>
+                                <div class="menu_btn_line3"></div>
+                            </div>
+                            <div id="menu_close">
+                                <div class="menu_btn_line4"></div>
+                                <div class="menu_btn_line5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nav"> <!-- 좌측메뉴 -->
+                        <div id="navwrap">
+                            <ul id="navmenu">
+                                <li><a href="#skills" class="Button03">ABOUT ME</a></li>
+                                <li><a href="#portfolio" class="Button01">CSS</a></li>
+                                <li><a href="#portfolio01" class="Button04">jquery</a></li>
+                                <li><a href="#wrap03" class="Button05">jquery반응형</a></li>
+                                <li><a href="#wrap02" class="Button06">React App</a></li>
+                                <li><a href="#contact" class="Button02">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </header>
+            </div>
+
+            <!-- home end -->
+
+            <div id="skills" class="mn">
+                <h2><a href="#"><img src="./img/mainproflie.jpg" alt="프로필사진"></a></h2>
+
+                <div id="menuWrap">
+                    <ul id="menu" class="cf">
+                        <li><a href="#contact" class="Button02">CONTACT</a></li>
+                        <li><a href="#portfolio" class="Button01">PORTFOLIO</a></li>
+                        <li><a href="#skills" class="Button03">ABOUT ME</a></li>
+                        <li><a href="#">HOME</a></li>
+                    </ul>
+                </div>
+
+                <div class="about">
+                    <h3>ABOUT ME</h3>
+                    <ul>
+                        <li>이름 : 송보경</li>
+                        <li>BIRTH : 1990.07.23</li>
+                        <li>ADRRESS : 수원시 장안구 이목동</li>
+                        <li>ADVANTAGE : 책임감, 성실, 꼼꼼함</li>
+                    </ul>
+                </div>
+                <div class="career">
+                    <h3>CAREER & LICENSE</h3>
+                    <ul>
+                        <li> UI/UX 디자인과 프론트엔드 개발자<br> 양성 과정 이수(연세IT미래교육원)</li>
+                        <li>웹디자인기능사</li>
+                        <li>GTQ포토샵1급</li>
+                        <li>운전면허증 2종 보통</li>
+                    </ul>
+                </div>
+                <div id="skills_wrap">
+                    <h3>SKILLS</h3>
+                    <div id="progress_wrap">
+                        <ul>
+                            <li>
+                                <span class="en progress_tit">HTML</span>
+                                <div class="en progress_cnt">
+                                    <span id="html_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="html_bar" class="bar"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="en progress_tit">CSS</span>
+                                <div class="en progress_cnt">
+                                    <span id="css_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="css_bar" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="en progress_tit">JAVASCRIPT</span>
+                                <div class="en progress_cnt">
+                                    <span id="javascript_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="javascript_bar" class="bar"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="en progress_tit">JQUERY</span>
+                                <div class="en progress_cnt">
+                                    <span id="jquery_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="jquery_bar" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="en progress_tit">PHOTOSHOP</span>
+                                <div class="en progress_cnt">
+                                    <span id="photoshop_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="photoshop_bar" class="bar"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="en progress_tit">ILLUSTRATOR</span>
+                                <div class="en progress_cnt">
+                                    <span id="illustrator_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="illustrator_bar" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="en progress_tit">FIGMA</span>
+                                <div class="en progress_cnt">
+                                    <span id="figma_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="figma_bar" class="bar"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="en progress_tit">REACT</span>
+                                <div class="en progress_cnt">
+                                    <span id="react_cnt">0</span>
+                                    <span>/</span>
+                                    <span>100</span>
+                                </div>
+                                <div class="progress">
+                                    <div id="react_bar" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- skills end -->
+
+
+
+
+            <div id="portfolio" class="mn">
+                <div id="wrap">
+                    <div id="scroll">
+                        <div class="css_img">
+                            <div class="pc_img"><a href="#" target="_blank"><img src="img/pc.png" alt=""></a></div>
+                            <div class="main_page">
+                                <a href="http://bokyung.dothome.co.kr/" target="_blank"><img src="./img/bbia.jpeg"
+                                        width="83%" alt="bbia"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="css_text">
+                    <div class="csstx">
+                        html,css를 이용하여 처음으로 만든 웹 페이지입니다.<br>기존에 있던
+                        BBIA 웹 사이트를 가지고 리뉴얼 했습니다.<br>
+                        웹 사이트 이미지에 어울리게 핑크컬러를 사용하였으며<br> 레이아웃도 기존의 웹사이트와 다르게 조금 더 깔끔하게 <br>배치하였습니다. 처음 만들어 본 웹사이트라
+                        제작하는데<br> 시간도 오래걸리고, 이미지를 배치하는데 많은 어려움이<br>
+                        있었지만, 웹 사이트를 만들면서 그동안 배웠던 내용들을<br> 한 번 더 정확히 짚어 볼 수 있어서 좋았습니다.
+                        <p><strong>참여도 : </strong> 100%</p>
+                        <p><strong>제작기간 :</strong> 5일</p>
+                    </div>
+                    <ul class="program">
+                        <li>USE PROGRAM
+                            <ul class="sub">
+                                <li><img src="./img/html2l.png" width="54" alt="html5"></li>
+                                <li><img src="./img/css3.png" width="38" alt="css3"></li>
+                                <li class="move"><img src="./img/thubmnail-icon-photoshop.png" width="50"
+                                        alt="Photoshop"></li>
+                            </ul>
+                        </li>
+                        <li class="cross">CROSS BROWSING
+                            <ul class="sub">
+                                <li class="move2"><img src="./img/crome.png" width="40" alt="crome"></li>
+                                <li class="move3"><img src="./img/explorer.png" width="43" alt="explorer"></li>
+                                <li><img src="./img/edge.png" width="40" alt="edge"></li>
+                                <li><img src="./img/opera.png" width="40" alt="opera"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="button_wrap01">
+                    <h2 class="type2-4">CSS</h2>
+                    <P>BBIA</P>
+                    <a href="./project01/index.html" class="btn" target="_blank">main</a>
+                    <a href="./project01/sub.html" class="btn" target="_blank">sub01</a>
+                    <!--  <a href="#" class="btn" target="_blank">sub02</a>
+                    <a href="#" class="btn" target="_blank">sub03</a> -->
+                    <a href="./project01/notice01/Notice.html" class="btn" target="_blank">Notice</a>
+
+                </div>
+            </div>
+
+
+            <!-- css end -->
+
+
+            <div id="portfolio01" class="mn">
+                <div id="wrap01">
+                    <div id="scroll01">
+                        <div class="css_img01">
+                            <div class="pc_img"><a href="#" target="_blank"><img src="img/pc.png" alt="pc_img"></a>
+                            </div>
+                            <div class="main_page01">
+                                <a href="" target="_blank"><img src="./img/mainpage.png" width="82%" alt="mainpage"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jquery_text01">
+                    <div>
+                        jquery 기능을 이용하여 만든 첫 관공서 웹 페이지 입니다.<br>
+                        기존에 있는 국립중앙도서관 사이트에서는 없던 부분들을<br> 제이쿼리를 이용해 기능들을 더하고 레이아웃과 컬러에도<br> 변화를 주어 새롭게 리뉴얼 해 보았습니다.<br>
+                        메인페이지 영역은 Grid를 활용하여 레이아웃을 나누었고<br> footer와 header의 너비는 1240px로 맞춰 작업하였습니다.<br>
+                        Sub페이지들은 100%로 레이아웃을 잡아 제작해 봤습니다.
+                        <p><strong>제작참여도 : </strong>100%</p>
+                        <p><strong>소요기간 : </strong>9일</p>
+                    </div>
+
+                    <div class="use_program">
+                        <h3 class="h3">USE PROGRAM</h3>
+                        <ul>
+                            <li><img src="./img/html2l.png" width="55" alt="html5"></li>
+                            <li><img src="./img/css3.png" width="40" alt="css3"></li>
+                            <li class="move"><img src="./img/thubmnail-icon-photoshop.png" width="50" alt="photoshop">
+                            </li>
+                            <li><img src="./img/image.png" width="55" alt="jquery"></li>
+                            <li><img src="./img/w3c.png" width="55" alt="w3c"></li>
+                        </ul>
+                    </div>
+                    <div class="cross_browsing">
+                        <h3 class="h3">CROSS BROWSING</h3>
+                        <ul>
+                            <li><img src="./img/crome.png" width="40" alt="crome"></li>
+                            <li><img src="./img/edge.png" width="40" alt="edge"></li>
+                            <li><img src="./img/explorer.png" width="40" alt="explorer"></li>
+                            <li><img src="./img/Firefox_logo.png" width="40" alt="Firefox"></li>
+                            <li><img src="./img/opera.png" width="40" alt="opera"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="button_wrap02">
+                    <h2 class="type2-5">CSS, JQUERY</h2>
+                    <p class="blue">국립중앙도서관</p>
+                    <a href="./project02/index.html" class="btn01" target="_blank">main</a>
+                    <a href="./project02/sub_02.html" class="btn01" target="_blank">sub01</a>
+                    <a href="./project02/sub_03.html" class="btn01" target="_blank">sub02</a>
+                    <a href="./project02/sub_04.html" class="btn01" target="_blank">sub03</a>
+                    <a href="./project02/pan.html" class="btn01" target="_blank">Notice</a>
+                    <a href="./project02/login.html" class="btn01" target="_blank">Login</a>
+                </div>
+            </div>
+            <!-- j-qurey end -->
+
+            <!-- 반응형 start -->
+            <div id="portfolio" class="mn">
+                <div id="wrap03">
+                    <div id="scroll">
+                        <div class="css_img02">
+                            <div class="pc_img02"><a href="#" target="_blank"><img src="img/pc.png" alt="pc_img"></a>
+                            </div>
+                            <div class="main_page02">
+                                <a href="https://songbokyung.github.io/project03/" target="_blank">
+                                    <img src="./img/musinsa.JPG" width="83%" alt="project03">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="iphone">
+                            <div class="iphone_img">
+                                <a href="#" target="_blank"><img src="./img/iphone2.png" alt="iphone"></a>
+                            </div>
+                            <div class="iphoneMain">
+                                <a href="https://songbokyung.github.io/project03/"
+                                    onclick="window.open(this.href, '_blank', 'width=400, height=700'); return false;">
+                                    <img src="./img/iphonemusinsa.png" width="100%" alt="iphonemusinsa"></a>
+                            </div>
+                        </div>
+                        <div id="ipad">
+                            <div class="ipad_img">
+                                <a href="#" target="_blank"><img src="./img/ipad.png" alt="ipad"></a>
+                            </div>
+                            <div class="ipadMain">
+                                <a href="https://songbokyung.github.io/project03/"
+                                    onclick="window.open(this.href, '_blank', 'width=810, height=900'); return false;"><img
+                                        src="./img/ipadmusinsa.png" width="48%" alt="ipadmusinsa"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="musinsa_txwrap">
+                    <h2 class="type2-3">반응형 웹</h2>
+                    <P class="gray">MUSINSA</P>
+                </div>
+                <div class="musinsa_text">
+                    <div>
+                        기존에 있는 musinsa 웹사이트를 디바이스 크기에 따라<br>변화할수 있도록 4구간으로 나눠 Break Point를 주었고<br>변화하는 디바이스 크기에 맞게
+                        레이아웃 변화를 어떻게<br>구성 해야할지 많은 고민이
+                        되었던 작업이었습니다.<br>
+                        <p><strong>제작참여도 : </strong>100%</p>
+                        <p><strong>소요기간 : </strong>2일</p>
+                    </div>
+                    <ul class="program">
+                        <li>USE PROGRAM
+                            <ul class="sub">
+                                <li><img src="./img/html2l.png" width="54" alt="html5"></li>
+                                <li><img src="./img/css3.png" width="38" alt="css3"></li>
+                                <li class="move"><img src="./img/thubmnail-icon-photoshop.png" width="50"
+                                        alt="Photoshop"></li>
+                            </ul>
+                        </li>
+                        <li class="cross">CROSS BROWSING
+                            <ul class="sub">
+                                <li class="move2"><img src="./img/crome.png" width="40" alt="crome"></li>
+                                <li><img src="./img/Firefox_logo.png" width="45" alt="Firefox"></li>
+                                <li><img src="./img/edge.png" width="40" alt="edge"></li>
+                                <li><img src="./img/opera.png" width="40" alt="opera"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- 반응형 end -->
+
+
+            <!-- react start -->
+            <div id="portfolio" class="mn">
+                <div id="wrap02">
+                    <div id="scroll">
+                        <div class="css_img">
+                            <div class="mobile_img"><a href="#" target="_blank"><img src="./img/iphone.png"
+                                        alt="iphone"></a>
+                            </div>
+                            <div class="app_page">
+                                <a href="https://songbokyung.github.io/kkoruruk"
+                                    onclick="window.open(this.href, '_blank', 'width=450, height=920'); return false;">
+                                    <img src="./img/app.JPG" alt="project04">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="css_text">
+                    <div class="ccorrk">
+                        REACT와 부트스트랩을 이용하여 모바일앱 제작/기획 부터 시작해서<br> 만들고 이용자의 주변을 기반으로 맛집을 찾는 앱을 제작하였습니다.<br>기존의 맛집 찾아주는
+                        서비스 앱 들을 살펴보고 참고하였으며 부족한<br> 부분이나 채워졌으면 하는 부분들을 새로 만들었으며, 팀 프로젝트가<br> 아닌 혼자서 기획부터 제작까지 하려니
+                        완성까지 시간도 오래걸렸고 <br> 리액트라는 프로그램으로 앱 을 구현하려니 많은 어려움이 있었지만<br>
+                        리액트를 배우면서 라우터 연결이나 부트스트랩을 적용 하는 방법 등<br>
+                        직접 앱을 만들어봄으로써 다시 한번 공부할수있게 돼서 좋았습니다.
+                    </div>
+                    <ul class="program">
+                        <li>USE PROGRAM
+                            <ul class="sub">
+                                <li><img src="./img/html2l.png" width="54" alt="html5"></li>
+                                <li><img src="./img/css3.png" width="38" alt="css3"></li>
+                                <li class="move"><img src="./img/thubmnail-icon-photoshop.png" width="50"
+                                        alt="Photoshop"></li>
+                                <li class="react_move"><img src="./img/react.png" width="54" alt="react"></li>
+                                <li><img src="./img/figmalogo.png" width="54" height="49" alt="figma"></li>
+
+                            </ul>
+                        </li>
+                        <li class="cross">CROSS BROWSING
+                            <ul class="sub">
+                                <li class="move2"><img src="./img/crome.png" width="40" alt="crome"></li>
+                                <li><img src="./img/Firefox_logo.png" width="45" alt="Firefox"></li>
+                                <li><img src="./img/edge.png" width="40" alt="edge"></li>
+                                <li><img src="./img/opera.png" width="40" alt="opera"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="button_wrap02">
+                    <h2 class="type2-2">REACT APP</h2>
+                    <P class="green">꼬르르륵</P>
+                    <a href="https://songbokyung.github.io/kkoruruk" class="btn04" target="_blank">MAIN</a>
+                    <a href="꼬르르륵ver02.pdf" class="btn04" target="_blank">PPT</a>
+                    <a href="https://www.figma.com/file/dfjb6z9vNh8QPpKqxzgAVE/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9D%B4%ED%95%91?type=design&node-id=0%3A1&mode=design&t=MJHzrC07FhPHCEKR-1"
+                        class="btn04" target="_blank">FIGMA</a>
+                </div>
+            </div>
+            <!-- react end -->
+
+            <div id="contact" class="mn">
+
+                <!--  <span class="type"><span> --> <!-- 글씨 하나하나 나타나는 효과 -->
+                <div id="contact_wrap">
+                    <div class="wave"></div>
+                    <div class="wave02"></div>
+                    <div class="center">
+                        <div class="card">
+                            <div class="bluecard showBalloon">
+                                <div class="card_left">
+                                    <div class="contact_me">
+                                        <img src="./img/profile.jpg" width="200" height="310" alt="contactimg">
+                                    </div>
+                                </div>
+
+                                <div class="more-info">
+                                    <h4>Song bo kyung</h4>
+                                    <div class="send">
+                                        <span>E-mail -</span>
+                                        <a href="mailto:rkwlskgd@naver.com">rkwlskgd@naver.com</a>
+                                        <span>Phone -</span>
+                                        <a href="tel:01048440268">010 . 4844 . 0268</a>
+                                    </div>
+                                    <div class="copy">
+                                        <p>본 사이트는 상업적 목적이 아닌<br>개인 포트폴리오용으로 제작되었습니다.</p>
+                                        <p>© SBK. All rights reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <h4>PUBLISHER &amp; <br>Front-End</h4>
+                                <p>안녕하세요;-><br>멈추지 않고 항상 배움의 자세로<br>자신을 개발하는 웹퍼블리셔 송보경입니다.</p>
+                                <span class="more">마우스를 올려주세요~</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact end -->
+
+
+        </div> <!-- contents end -->
+    </div> <!-- wrap -->
+</body>
+
+</html>
